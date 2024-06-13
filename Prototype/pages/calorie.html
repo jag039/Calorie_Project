@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="../styles/calorie.css" />
   <link rel="stylesheet" href="../styles/userTrack.css" />
   <link rel="stylesheet" href="../styles/favFoodLog.css" />
+  <script src="../script/calorie.js"></script>
   <title>Calorie</title>
 </head>
 <body>
   <header>
     <!-- Include Calander and User Name -->
-    <p type="date" >June 11, 2024</p>
-    <p>Jesus Gonzalez</p>
+    <span><p>June 11, 2024</p></span>
+    <span><p>Jesus Gonzalez</p></span>
   </header>
   <main>
     <!-- User View -->
@@ -22,18 +23,74 @@
         <p>Calorie Count: ####</p>
     </div>
     <!-- Favorites / Food Log -->
-    <div id="favorites">
-        <div id="fav"></div>
-        <div id="fav"></div>
-        <div id="fav"></div>
-        <div id="fav"></div>
+    <div id="right0">
+      <div id="right1">
+        <p>Favorites</p>
+        <div id="favorites">
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+            <div id="fav"></div>
+        </div>      
+      </div>
+      <div id="right2" style="display: none">
+        <p>Food Log</p>
+        <div id="log">
+          <div id="entry"></div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+          <div id="entry">1</div>
+        </div>
+      </div>
     </div>
+
+
   </main>
   <footer>
     <!-- Open/Close Food log button -->
-    <button> Open Food Log</button>
+    <button id="openLog"> Open Food Log</button>
+    <button id="closeLog" style="display:none;"> Close Food Log</button>
     <!-- New Food Entry Button -->
-    <button> New Entry</button>
+    <button id="newEntry"> New Entry</button>
   </footer>
   
 </body>

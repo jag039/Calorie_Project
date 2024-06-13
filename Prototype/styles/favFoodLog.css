@@ -1,0 +1,54 @@
+#right0{
+  flex-grow: 2;
+}
+
+#right1{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 100%;
+}
+#right1 > p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+}
+#favorites {
+  margin: 1em;
+  display: grid;
+  grid-template-rows: 10em;
+  grid-auto-rows: 10em;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 10px;
+  overflow: auto;
+  flex-grow: 1;
+}
+#favorites > #fav {
+  background-color: rgb(138, 180, 225);
+}
+
+#right2 {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden
+}
+#right2 > p{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  flex-grow: 1;
+}
+#log{
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+#entry{
+  margin: 0.5em;
+  height: 5em;
+  background-color: rgb(138, 180, 225);
+}
